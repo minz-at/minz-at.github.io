@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: {{ site.url }}/sitemap.xml
+
+# Disallow admin redirects from being indexed
+Disallow: /signup
+Disallow: /login
+Disallow: /dashboard

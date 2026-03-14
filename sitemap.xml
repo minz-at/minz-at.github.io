@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/benefits/</loc>
+<loc>https://www.minz.at/benefits/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/contact/</loc>
+<loc>https://www.minz.at/contact/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>https://www.minz.at/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/pricing/</loc>
+<loc>https://www.minz.at/pricing/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/resources/</loc>
+<loc>https://www.minz.at/resources/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/assets/pdfs/pricing-workbook.pdf</loc>
+<loc>https://www.minz.at/assets/pdfs/pricing-workbook.pdf</loc>
 <lastmod>2026-03-14T11:38:40+01:00</lastmod>
 </url>
 </urlset>

@@ -12,4 +12,11 @@
 <url>
 <loc>http://localhost:4000/pricing/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/resources/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdfs/pricing-workbook.pdf</loc>
+<lastmod>2026-03-14T11:38:40+01:00</lastmod>
+</url>
 </urlset>

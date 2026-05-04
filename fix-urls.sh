@@ -5,22 +5,22 @@
 
 set -e
 
-echo "🔧 Fixing URLs in HTML files..."
+echo "🔧 Fixing URLs in HTML and XML files..."
 echo ""
 
-# Find all HTML files
-html_files=$(find . -name "*.html" -type f)
+# Find all HTML files and XML files (sitemap.xml, feed.xml)
+files=$(find . -name "*.html" -type f -o -name "sitemap.xml" -type f -o -name "feed.xml" -type f)
 
-if [ -z "$html_files" ]; then
-    echo "❌ No HTML files found"
+if [ -z "$files" ]; then
+    echo "❌ No HTML or XML files found"
     exit 1
 fi
 
 # Counter for modified files
 modified=0
 
-# Process each HTML file
-for file in $html_files; do
+# Process each file
+for file in $files; do
     # Check if file contains localhost URLs
     if grep -q "http://localhost:4000" "$file"; then
         echo "📝 Fixing: $file"
@@ -38,14 +38,14 @@ echo "✅ Done! Fixed $modified file(s)"
 # Show summary of production URLs
 echo ""
 echo "📊 Verification - Production URLs found:"
-grep -r "https://www.minz.at" --include="*.html" . | wc -l | xargs echo "  Total occurrences:"
+grep -r "https://www.minz.at" --include="*.html" --include="*.xml" . | wc -l | xargs echo "  Total occurrences:"
 
 echo ""
 echo "🔍 Checking for remaining localhost URLs..."
-remaining=$(grep -r "localhost" --include="*.html" . 2>/dev/null | wc -l)
+remaining=$(grep -r "localhost" --include="*.html" --include="*.xml" . 2>/dev/null | wc -l)
 if [ "$remaining" -eq 0 ]; then
     echo "✅ No localhost URLs remaining"
 else
     echo "⚠️  Warning: Found $remaining localhost reference(s):"
-    grep -rn "localhost" --include="*.html" . | head -5
+    grep -rn "localhost" --include="*.html" --include="*.xml" . | head -5
 fi

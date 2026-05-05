@@ -9,7 +9,7 @@ echo "🔧 Fixing URLs in HTML and XML files..."
 echo ""
 
 # Find all HTML files and XML files (sitemap.xml, feed.xml)
-files=$(find . -name "*.html" -type f -o -name "sitemap.xml" -type f -o -name "feed.xml" -type f)
+files=$(find . \( -name "*.html" -o -name "sitemap.xml" -o -name "feed.xml" \) -type f)
 
 if [ -z "$files" ]; then
     echo "❌ No HTML or XML files found"
@@ -28,7 +28,7 @@ for file in $files; do
         # Replace localhost URLs with production URLs
         sed -i 's|http://localhost:4000|https://www.minz.at|g' "$file"
 
-        ((modified++))
+        modified=$((modified + 1))
     fi
 done
 

@@ -30,7 +30,9 @@
     <meta name="description" content="The complete solution for literary magazine publishers - from submission management to subscriber growth">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.png"></head>
+    <link rel="icon" type="image/png" href="/favicon.png"><!-- Umami Analytics -->
+    <script defer src="https://analytics.minz.at/script.js" data-website-id="d903c490-912e-402e-9521-0d9253a78a3e"></script>
+</head>
 
 <!-- Layout Component - Converted from Layout.tsx -->
 <body class="min-h-screen bg-gradient-to-br from-parchment-50 to-secondary-100 font-sans"><!-- Header Component - Converted from Header.tsx -->
@@ -55,6 +57,9 @@
       <a href="/benefits/" class="text-charcoal-700 text-literary font-medium transition-all hover:font-bold" style="text-decoration: none;" onmouseover="this.style.color='#D97706'; this.style.textDecoration='underline'; this.style.textDecorationThickness='2px';" onmouseout="this.style.color=''; this.style.textDecoration='none';">
         Why Choose Us
       </a>
+      <a href="/media-coverage/" class="text-charcoal-700 text-literary font-medium transition-all hover:font-bold" style="text-decoration: none;" onmouseover="this.style.color='#D97706'; this.style.textDecoration='underline'; this.style.textDecorationThickness='2px';" onmouseout="this.style.color=''; this.style.textDecoration='none';">
+        Testimonials
+      </a>
       <a href="/pricing/" class="text-charcoal-700 text-literary font-medium transition-all hover:font-bold" style="text-decoration: none;" onmouseover="this.style.color='#D97706'; this.style.textDecoration='underline'; this.style.textDecorationThickness='2px';" onmouseout="this.style.color=''; this.style.textDecoration='none';">
         Pricing
       </a>
@@ -63,8 +68,22 @@
       </a>
     </nav>
 
-    <!-- Auth Buttons -->
+    <!-- Language Switcher & Auth Buttons -->
     <div class="flex items-center space-x-6">
+      <!-- Language Switcher -->
+      <div class="flex items-center space-x-2 border-r border-charcoal-300 pr-6">
+        
+        
+          <a href="/" class="text-charcoal-700 font-medium hover:text-accent-600 transition-colors">
+            EN
+          </a>
+          <span class="text-charcoal-400">|</span>
+          <a href="/fr/" class="text-charcoal-700 font-medium hover:text-accent-600 transition-colors">
+            FR
+          </a>
+        
+      </div>
+
       <a href="https://app.minz.at/login"
          class="text-charcoal-700 text-literary font-medium py-3 transition-all hover:font-bold" style="text-decoration: none;" onmouseover="this.style.color='#D97706'; this.style.textDecoration='underline'; this.style.textDecorationThickness='2px';" onmouseout="this.style.color=''; this.style.textDecoration='none';">
         Log In
@@ -128,6 +147,121 @@
   </div>
 </section>
 
+
+<!-- Testimonials Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl heading-primary mb-4">
+        What Authors Say
+      </h2>
+      <p class="text-xl text-charcoal-700 max-w-2xl mx-auto text-literary">
+        Real stories from authors using Minz to connect with their readers
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Testimonial 1: Victor Henrio -->
+      <div class="bg-white rounded-xl p-6 shadow-lg border-t-4" style="border-top-color: #D97706;">
+        <div class="mb-4">
+          <svg class="w-8 h-8 text-accent-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+        </div>
+        <p class="text-charcoal-700 text-literary mb-4 italic">
+          "We put QR codes in our YouTube videos that get millions of views over years. With Minz, a QR code from a 3-year-old video still works—we just update where it points. Our audience always lands on our current content, not expired offers."
+        </p>
+        <div>
+          <p class="font-semibold text-primary-800">Victor Henrio</p>
+          <p class="text-sm text-charcoal-600">Youtuber and Co-founder of <a href="https://www.youtube.com/@alex_bsn_invest" target="_blank" rel="noopener noreferrer" style="color: #D97706; text-decoration: underline;">Zone Franche</a></p>
+        </div>
+      </div>
+
+      <!-- Testimonial 2: Édouard -->
+      <div class="bg-white rounded-xl p-6 shadow-lg border-t-4" style="border-top-color: #D97706;">
+        <div class="mb-4">
+          <svg class="w-8 h-8 text-accent-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+        </div>
+        <p class="text-charcoal-700 text-literary mb-4 italic">
+          "We print thousands of copies per edition. Before Minz, every book was a frozen snapshot. Now, every printed copy becomes a living gateway. Same QR code, infinite possibilities."
+        </p>
+        <div>
+          <p class="font-semibold text-primary-800">Édouard</p>
+          <p class="text-sm text-charcoal-600">Author and Publisher at <a href="https://konsensusnetwork.com/" target="_blank" rel="noopener noreferrer" style="color: #D97706; text-decoration: underline;">Konsensus Network</a></p>
+        </div>
+      </div>
+
+      <!-- Testimonial 3: Coralie Sanchez Ducroquet -->
+      <div class="bg-white rounded-xl p-6 shadow-lg border-t-4" style="border-top-color: #D97706;">
+        <div class="mb-4">
+          <svg class="w-8 h-8 text-accent-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+        </div>
+        <p class="text-charcoal-700 text-literary mb-4 italic">
+          "I published a guide to help exhausted parents with baby sleep—but parenting advice can't be frozen in time. Now, the QR code inside connects readers to updated methods, parent support groups, and new discoveries. The book stays in print, but the guidance stays current."
+        </p>
+        <div>
+          <p class="font-semibold text-primary-800">Coralie Sanchez Ducroquet</p>
+          <p class="text-sm text-charcoal-600">Author of <a href="https://www.amazon.fr/Sommeil-b%C3%A9b%C3%A9-enfant-Lenfant-dormira/dp/B0GN55GKQ9" target="_blank" rel="noopener noreferrer" style="color: #D97706; text-decoration: underline;">"Sommeil bébé & enfant"</a> and Early Childhood Educator</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Testimonials -->
+<section class="py-16 parchment-bg">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl heading-primary mb-4">
+        Video Testimonials
+      </h2>
+      <p class="text-xl text-charcoal-700 max-w-2xl mx-auto text-literary">
+        Watch authors and publishers share their experience with Minz
+      </p>
+    </div>
+
+    <div class="flex justify-center">
+      <!-- Video Testimonial - YouTube Short -->
+      <div class="w-full" style="max-width: 360px;">
+        <!-- Phone Mockup -->
+        <div class="relative" style="padding: 12px; background: linear-gradient(145deg, #2d3748 0%, #1a202c 100%); border-radius: 40px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);">
+          <!-- Power Button -->
+          <div style="position: absolute; right: -3px; top: 100px; width: 3px; height: 60px; background: #1a202c; border-radius: 0 2px 2px 0;"></div>
+
+          <!-- Volume Buttons -->
+          <div style="position: absolute; left: -3px; top: 90px; width: 3px; height: 35px; background: #1a202c; border-radius: 2px 0 0 2px;"></div>
+          <div style="position: absolute; left: -3px; top: 135px; width: 3px; height: 35px; background: #1a202c; border-radius: 2px 0 0 2px;"></div>
+
+          <!-- Screen -->
+          <div style="position: relative; background: #000; border-radius: 32px; overflow: hidden; box-shadow: inset 0 0 0 2px rgba(255,255,255,0.05);">
+            <div class="relative" style="padding-bottom: 177.78%; height: 0;">
+              <iframe
+                src="https://www.youtube.com/embed/QVzd7BwzOJs"
+                title="Author Testimonial"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description below phone -->
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold text-primary-800 mb-2">
+            Victor from Zone Franche
+          </h3>
+          <p class="text-sm text-charcoal-600">See how Minz helps Zone Franche stay connected with their audience</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Video Features -->
 <section class="py-16 bg-white">

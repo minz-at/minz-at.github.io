@@ -30,7 +30,9 @@
     <meta name="description" content="The complete solution for literary magazine publishers - from submission management to subscriber growth">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.png"></head>
+    <link rel="icon" type="image/png" href="/favicon.png"><!-- Umami Analytics -->
+    <script defer src="https://analytics.minz.at/script.js" data-website-id="d903c490-912e-402e-9521-0d9253a78a3e"></script>
+</head>
 
 <!-- Layout Component - Converted from Layout.tsx -->
 <body class="min-h-screen bg-gradient-to-br from-parchment-50 to-secondary-100 font-sans"><!-- Header Component - Converted from Header.tsx -->
@@ -55,6 +57,9 @@
       <a href="/benefits/" class="text-charcoal-700 text-literary font-medium transition-all hover:font-bold" style="text-decoration: none;" onmouseover="this.style.color='#D97706'; this.style.textDecoration='underline'; this.style.textDecorationThickness='2px';" onmouseout="this.style.color=''; this.style.textDecoration='none';">
         Why Choose Us
       </a>
+      <a href="/media-coverage/" class="text-charcoal-700 text-literary font-medium transition-all hover:font-bold" style="text-decoration: none;" onmouseover="this.style.color='#D97706'; this.style.textDecoration='underline'; this.style.textDecorationThickness='2px';" onmouseout="this.style.color=''; this.style.textDecoration='none';">
+        Testimonials
+      </a>
       <a href="/pricing/" class="text-charcoal-700 text-literary font-medium transition-all hover:font-bold" style="text-decoration: none;" onmouseover="this.style.color='#D97706'; this.style.textDecoration='underline'; this.style.textDecorationThickness='2px';" onmouseout="this.style.color=''; this.style.textDecoration='none';">
         Pricing
       </a>
@@ -63,8 +68,22 @@
       </a>
     </nav>
 
-    <!-- Auth Buttons -->
+    <!-- Language Switcher & Auth Buttons -->
     <div class="flex items-center space-x-6">
+      <!-- Language Switcher -->
+      <div class="flex items-center space-x-2 border-r border-charcoal-300 pr-6">
+        
+        
+          <a href="/" class="text-charcoal-700 font-medium hover:text-accent-600 transition-colors">
+            EN
+          </a>
+          <span class="text-charcoal-400">|</span>
+          <a href="/fr/" class="text-charcoal-700 font-medium hover:text-accent-600 transition-colors">
+            FR
+          </a>
+        
+      </div>
+
       <a href="https://app.minz.at/login"
          class="text-charcoal-700 text-literary font-medium py-3 transition-all hover:font-bold" style="text-decoration: none;" onmouseover="this.style.color='#D97706'; this.style.textDecoration='underline'; this.style.textDecorationThickness='2px';" onmouseout="this.style.color=''; this.style.textDecoration='none';">
         Log In
